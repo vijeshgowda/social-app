@@ -3,7 +3,7 @@ import style from "./style.css"
 const App = () => {
     return(
         <div>
-            <header>the social media app</header>
+            <h1>the social media app</h1>
         </div>
     );
 }
