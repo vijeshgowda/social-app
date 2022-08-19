@@ -12,6 +12,11 @@ const postSchema = mongoose.Schema({
         default: 0
     },
 
+    dislike: {
+      type: Number,
+      default: 0
+    },
+
     createdAt: {
         type: Date,
         default: new Date()
