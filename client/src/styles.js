@@ -14,5 +14,6 @@ export default makeStyles(() => ({
     },
     image: {
         marginLeft: '15px',
+        boxShadow: "0px 0px 10px grey",
     }
 }));
