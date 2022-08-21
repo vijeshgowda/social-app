@@ -3,7 +3,7 @@ import { Container, AppBar, Typography, Grid, Grow} from '@material-ui/core';
 import { useDispatch } from "react-redux";
 
 import { getPosts } from './actions/posts';
-import memories from './images/sroad.png'
+import memories from './images/heart-button.png'
 import Posts from "./components/Posts/Posts";
 import Form from "./components/Form/Form";
 import useStyles from './styles';
@@ -19,7 +19,6 @@ const App = () => {
     return(
         <Container maxWidth="lg">
             <AppBar className={classes.appBar} position="static" color="inherit">
-                <img className={classes.image} src={memories} alt='memories' height='60'/>
                 <Typography className={classes.heading} variant='h2' align="center">My Memories</Typography>
                 <img className={classes.image} src={memories} alt='memories' height='60'/>
             </AppBar>
@@ -35,6 +34,13 @@ const App = () => {
                     </Grid>
                 </Container>
             </Grow>
+            <AppBar className={classes.appBar} position={"static"} color={"inherit"}>
+                <Typography className={classes.body} variant={"body2"} align={"center"}>
+                    This is a Social website where you can login and post your memories.
+                    Created using MERN stack.
+                   <span className={classes.workInP}>Work in progress.</span>
+                </Typography>
+            </AppBar>
         </Container>
     );
 }

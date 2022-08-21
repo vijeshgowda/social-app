@@ -1,4 +1,4 @@
-import {makeStyles} from "@material-ui/core";
+import {makeStyles, rgbToHex} from "@material-ui/core";
 
 export default makeStyles(() => ({
     appBar: {
@@ -10,10 +10,16 @@ export default makeStyles(() => ({
         alignItems: 'center',
     },
     heading: {
-        color: "crimson",
+        color: "steelblue",
+        fontFamily: "fantasy",
     },
     image: {
         marginLeft: '15px',
-        boxShadow: "0px 0px 10px grey",
+       // boxShadow: "0px 0px 10px grey",
+    },
+    workInP:{
+        color: "maroon",
+        fontSize: "medium",
+        fontFamily: "cursive",
     }
 }));
